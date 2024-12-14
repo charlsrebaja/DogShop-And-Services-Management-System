@@ -1,0 +1,191 @@
+body {
+        
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f1f1 !important;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.card-img-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-img-container img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures image fits without distortion */
+}
+.card-body {
+        font-size: 0.9rem; /* Slightly smaller text size */
+        line-height: 1.2; /* Compress the spacing between lines */
+    }
+
+    .card-body strong {
+        color: #fa7a24 !important;
+
+    }
+
+
+    .card-title {
+        font-size: 1rem; /* Slightly smaller title */
+        margin-bottom: 0.5rem; /* Reduce bottom margin */
+        font-weight: 600; /* Bold title */
+    }
+
+    .card-text {
+        font-size: 0.85rem; /* Smaller description text */
+        margin-bottom: 0.5rem; /* Compress spacing */
+        font-weight: 300; /* Lighter text for description */
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600; /* Make button text bold */
+        background-color: #04BACC !important; /* Custom color for the navbar */
+        margin-left: -3px;
+    }
+     .btn:hover{
+        background-color: #38b3be !important;
+        font-size: 15px;
+        color: white !important;
+       
+     }
+
+/* Footer */
+footer {
+    background: #158691 !important;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+footer a {
+    color: #dce7f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+position: relative;
+background-image: url('../uploads/Premium\ Photo\ _\ Accessories\ for\ training\ and\ pet\ care.jpg'); /* Replace with your image path */
+background-size: cover;
+background-position: center;
+text-align: center;
+padding: 130px 20px;
+margin-bottom: 50px;
+overflow: hidden;
+}
+
+
+.banner::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.banner h2, .banner p, .banner a {
+position: relative;
+z-index: 1;
+color: #FFFFFF;
+}
+
+.banner h2 {
+font-size: 3.2rem;
+margin-bottom: 20px;
+font-weight: bold;
+color:#ff7b23;
+}
+
+.banner p {
+font-size: 1.2rem;
+margin-bottom: 30px;
+color: #666666;
+}
+
+.banner .btn {
+padding: 10px 25px;
+background-color: #04BACC !important;
+border: none;
+font-size: 1.2rem;
+color: white;
+transition: transform 0.3s, background-color 0.3s;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.banner .btn:hover {
+background-color: #158691 !important;
+transform: scale(1.05);
+color: white;
+}
+
+.appointment-banner {
+background-color: #04BACC; /* Matches the site's theme color */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+color: white;
+width: 83%;
+margin: auto;
+
+}
+
+.appointment-banner h4 {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.appointment-banner .btn {
+background-color: white;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+}
+
+.appointment-banner .btn:hover {
+background-color: #15939e;
+color: white;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px; /* Diameter of the dot */
+    height: 8px; /* Diameter of the dot */
+    border-radius: 30%; /* Make it circular */
+    background-color: black; /* Black dot color */
+    margin: 0 5px; /* Spacing between dots */
+    border: 1px solid white; /* Optional: Add a white border */
+    opacity: 0.6; /* Slightly transparent */
+    transition: opacity 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+.carousel-indicators .active {
+    background-color: black; /* Ensure the active indicator is also black */
+     opacity: 1; /* Fully visible for active dot */
+    transform: scale(1.2); /* Slightly larger active dot */
+}
+

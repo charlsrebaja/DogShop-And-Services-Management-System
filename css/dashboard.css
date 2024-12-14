@@ -1,0 +1,198 @@
+ /* Add this to your admin.css or inside <style> tag */
+ body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+    height: 100%;
+    display: flex;
+}
+
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    height: calc(120vh - 50px); /* Adjust height to exclude header or other parts */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 20px;
+
+}
+
+/* Custom scrollbar */
+.main-content::-webkit-scrollbar {
+    width: 12px; /* Slightly thicker scrollbar */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+/* Scrollbar thumb (draggable part) */
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #221301; /* Warm orange color */
+    border-radius: 10px;
+    border: 3px solid #fff; /* Add a white border around thumb for contrast */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for a 3D effect */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Scrollbar thumb on hover */
+.main-content::-webkit-scrollbar-thumb:hover {
+    background-color: #ffd700; /* Gold color when hovered */
+}
+
+/* Scrollbar track (the background part) */
+.main-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Light gray track */
+    border-radius: 10px; /* Rounded track */
+}
+
+/* Optional: Scrollbar when being dragged */
+.main-content::-webkit-scrollbar:horizontal {
+    height: 40px; /* Custom height for horizontal scrollbar */
+}
+
+.sidebar {
+    height: 100vh;
+    /*background: linear-gradient(to bottom, #17d7fd, #34bdeb);*/
+    background: #158691 !important;
+    color: white;
+    padding-top: 20px;
+}
+
+
+.sidebar h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+.main-content {
+    padding: 20px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.table-responsive {
+background: #ffffff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+overflow-x: auto;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive table th,
+.table-responsive table td {
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.table-responsive table th {
+    background: #158691 !important;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-responsive table td {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-responsive table tr:hover td {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.table-responsive table td a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.table-responsive table td a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.table-responsive table td .btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+.table-responsive table td .btn-primary {
+    background-color: #0096c7;
+    color: white;
+}
+
+.table-responsive table td .btn-danger {
+    background: linear-gradient(to bottom, #86e5f8, #34bdeb);
+    color: white;
+}
+
+.table-responsive table td .btn-primary:hover {
+    background-color: #007b99;
+}
+
+.table-responsive table td .btn-danger:hover {
+    background: linear-gradient(to bottom, #86e5f8, #34bdeb)!important;
+}
+
+.logout-btn {
+    background: black;
+    text-align: center;
+}
+.logout-btn:hover {
+    background: black !important;
+}
+.bg-custome{
+    background: linear-gradient(to bottom, #68b0be, #34bdeb)!important;
+}
